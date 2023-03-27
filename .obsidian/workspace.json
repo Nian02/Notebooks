@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "a23640c49edd0f8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "28e1337d643713be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0edaa8626a3384e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Git.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9b73790b935b8310",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "e77c6625d2fa38d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41b914b6a1a6ed47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Git.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3155338261bf236f",
+    "type": "split",
+    "children": [
+      {
+        "id": "bcb11dc63b8c4711",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12f36a133287a76c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "54ddf341fcb54ac6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3c271a634b136d32",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "250e0b34d490eddc",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e048932bfa41a91",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec6e9202b617b44c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f772978ee6105097",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ea925a13062a1d61",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5ec093bbae827123",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "9b73790b935b8310",
+  "lastOpenFiles": [
+    "Tools/Git.md",
+    "README.md",
+    "Image/Git process.png",
+    "Git process.md",
+    "Image/Pasted image 20230326172422.png",
+    "Image",
+    "新建文件夹",
+    "Pasted image 20230326172422.png",
+    "Tools"
+  ]
+}
