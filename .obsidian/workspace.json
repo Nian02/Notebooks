@@ -4,47 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "28e1337d643713be",
+        "id": "bfc5155a72cf5e00",
         "type": "tabs",
         "children": [
           {
-            "id": "0edaa8626a3384e1",
+            "id": "769e0b1ae96a7196",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Git.md",
+                "file": "Languages/Python/NumPy.md",
                 "mode": "source",
                 "source": true
               }
             }
-          },
-          {
-            "id": "9b73790b935b8310",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "e77c6625d2fa38d0",
+        "id": "bbd8159c6f81c6e7",
         "type": "tabs",
         "children": [
           {
-            "id": "41b914b6a1a6ed47",
+            "id": "9e1b5bfe127f0bb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Git.md",
+                "file": "Languages/Python/NumPy.md",
                 "mode": "preview",
                 "source": false
               }
@@ -116,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Languages/Python/NumPy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Languages/Python/NumPy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Languages/Python/NumPy.md"
               }
             }
           }
@@ -165,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,12 +161,23 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "9b73790b935b8310",
+  "active": "769e0b1ae96a7196",
   "lastOpenFiles": [
+    "Languages/Python/Python Basics.md",
+    "Languages/Python/NumPy.md",
+    "Machine Learning",
     "Tools/Git.md",
+    "Tools/Jupyter Notebooks.md",
+    "Tools/Google Colab.md",
+    "Google Colab/未命名.md",
+    "Google Colab",
+    "Languages/Python.md",
+    "Languages/Python",
+    "Languages",
     "README.md",
     "Image/Git process.png",
     "Git process.md",

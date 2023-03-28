@@ -1,21 +1,26 @@
 Git 是一个分布式版本控制系统。
 ## Git 配置
 可以保存 Git 用户名和电子邮件，这样就不必在以后的 Git 命令中再次输入它们。
+
 在命令行中配置本地仓库的账号和邮箱：
 ```
 git config --global user.name "Nian"  
 git config --global user.email "1275102714@qq.com"  
 ```
 **工作原理 / 流程**：
-![[Git process.png]]
+
+![](../Image/Git%20process.png)
 
 ## 创建本地库
 1. **初始化工作区**
+
 ```
 git init
 ```
 当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的
+
 2. **文件添加到暂存区**
+
 ```
 git add readme.txt
 ```
@@ -23,11 +28,13 @@ git add readme.txt
 ```
 git add .
 ```
+
 3. **文件提交到仓库**
 ```
 git commit -m "wrote a readme file"
 ```
 -m 后面是你修改的指令说明，这样你就能从历史记录里方便地找到改动记录。
+
 4. **查看是否有文件未提交**
 ```
 git status
@@ -41,8 +48,7 @@ git status
 ```
 ssh-keygen -t rsa -C "1275102714@qq.com"
 ```
-一路回车，使用默认值即可。
-在user主目录里找到.ssh目录，里面有**id_rsa和id_rsa.pub**两个文件。
+一路回车，使用默认值即可。在user主目录里找到.ssh目录，里面有**id_rsa和id_rsa.pub**两个文件。
 - id_rsa是私钥，不能泄露出去。
 - id_rsa.pub是公钥，公钥可以放心地告诉任何人。
 
@@ -65,12 +71,15 @@ git remote add ...
 
 2. **推送**
 
+为当前分支改名：`-m`改名，`- M`强制改名，git Bash中发现名字由master->main
+```
+git branch -M main
+```
 将本地仓库中的内容推送到远程仓库`origin`中。 
 ```
-git push -u origin master
+git push -u origin main
 ```
-第一次提交使用`-u`
-注意内容在master分支下
+第一次提交使用`-u`，之后就`git push`就好（带上-u参数其实就相当于记录了push到远端分支的默认值）
 
 ### 从远程仓库克隆
 ```
