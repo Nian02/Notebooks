@@ -3,5 +3,6 @@
   "newLinkFormat": "relative",
   "attachmentFolderPath": "Image",
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current"
 }

@@ -30,6 +30,8 @@ print ("list_x[-2]: ", list_x[-2]) # 索引值为-2时，表示访问倒数第�
 # list_x[-2]:  1
 ```
 - **切片**
+
+1:3<->[1,3) ^fd6be8
 ```Python
 print ("list_x[:]: ", list_x[:])
 print ("list_x[2:]: ", list_x[2:])
@@ -41,6 +43,9 @@ print ("list_x[:-1]: ", list_x[:-1])
 # list_x[1:3]:  ['hello', 1]
 # list_x[:-1]:  [3, 'hello', 1]
 ```
+
+^c9f3a8
+
 - 组合列表
 ```Python
 list_y = [2.4, "world"]

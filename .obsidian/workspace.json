@@ -4,16 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bfc5155a72cf5e00",
+        "id": "d15895dc9b532e9b",
         "type": "tabs",
+        "dimension": 48.803827751196174,
         "children": [
           {
-            "id": "769e0b1ae96a7196",
+            "id": "b872d6ecd302fbeb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Python/NumPy.md",
+                "file": "CMU15-445/01关系模型.md",
                 "mode": "source",
                 "source": true
               }
@@ -22,17 +23,18 @@
         ]
       },
       {
-        "id": "bbd8159c6f81c6e7",
+        "id": "0757eda77d4b6be1",
         "type": "tabs",
+        "dimension": 51.196172248803826,
         "children": [
           {
-            "id": "9e1b5bfe127f0bb2",
+            "id": "59097b40d1fe98d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Python/NumPy.md",
-                "mode": "preview",
+                "file": "CMU15-445/01关系模型.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -98,12 +100,22 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ec6e9202b617b44c",
+            "id": "2141321c757351e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CMU15-445/01关系模型.md"
+              }
+            }
+          },
+          {
+            "id": "18fe1fdb067e546e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Python/NumPy.md",
+                "file": "CMU15-445/01关系模型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,12 +127,12 @@
             }
           },
           {
-            "id": "f772978ee6105097",
+            "id": "175befeef79ffc50",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/Python/NumPy.md",
+                "file": "CMU15-445/01关系模型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,22 +145,11 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "5ec093bbae827123",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Languages/Python/NumPy.md"
+                "useHierarchy": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,26 +161,38 @@
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
       "command-palette:打开命令面板": false,
+      "templates:插入模板": false,
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "769e0b1ae96a7196",
+  "active": "b872d6ecd302fbeb",
   "lastOpenFiles": [
-    "Languages/Python/Python Basics.md",
+    "未命名.canvas",
+    "CMU15-445/01关系模型.md",
+    "CMU15-445",
+    "Languages/Python/Pandas.md",
+    "Image/Pandas_Hist.png",
+    "Image/Pasted image 20230330171248.png",
+    "Image/Pasted image 20230330170625.png",
+    "Image/Pasted image 20230330170600.png",
     "Languages/Python/NumPy.md",
-    "Machine Learning",
+    "Languages/Python/未命名.md",
+    "未命名 1.canvas",
+    "2023-03-30.md",
+    "README.md",
     "Tools/Git.md",
+    "Image/Correlation matrix.png",
     "Tools/Jupyter Notebooks.md",
+    "Languages/Python/Python Basics.md",
+    "Image/Git process.png",
+    "Machine Learning",
     "Tools/Google Colab.md",
     "Google Colab/未命名.md",
     "Google Colab",
     "Languages/Python.md",
     "Languages/Python",
     "Languages",
-    "README.md",
-    "Image/Git process.png",
     "Git process.md",
     "Image/Pasted image 20230326172422.png",
     "Image",
