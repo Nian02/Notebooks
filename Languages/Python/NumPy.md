@@ -8,7 +8,6 @@ import numpy as np
 np.random.seed(seed=1234)
 ```
 ## Scalar
-
 ```Python
 # 标量（scalars）
 x = np.array(6) # scalar
