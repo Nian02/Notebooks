@@ -58,7 +58,6 @@ df.head(3)
 ```Python
 import matplotlib.pyplot as plt
 ```
-## describe
 我们可以用`.describe()`来提取一些关于数值特征的标准细节
 ```Python
 # 描述性统计
@@ -106,6 +105,7 @@ array(['S', 'C', nan, 'Q'], dtype=object)
 
 # Filtering
 我们可以根据特征，甚至根据特定特征中的特定值(或值范围)过滤数据。
+## Selecting data
 ```Python
 # 通过特征选取数据
 df["name"].head()
@@ -120,6 +120,7 @@ Name: name, dtype: object
 """
 ```
 
+## Filtering data
 ```Python
 # 通过特征过滤数据
 df[df["sex"]=="female"].head() # only the female data appear
@@ -134,7 +135,6 @@ df[df["sex"]=="female"].head() # only the female data appear
 
 # Sorting
 我们可以对特征进行升序或降序排序
-## sort_values
 ```Python
 # Sorting 
 df.sort_values("age", ascending=False).head()
@@ -149,7 +149,6 @@ df.sort_values("age", ascending=False).head()
 
 # Grouping
 我们可以通过特定的组别来获得统计数字。我们想要看到获救的人和未获救的人之间的特征平均值。
-## groupby
 ```Python
 # Grouping（数据聚合与分组运算）
 survived_group = df.groupby("survived")
@@ -161,7 +160,6 @@ survived_group.mean()
 | 1        | 1.962    | 28.918228 | 0.462    | 0.476    | 49.361184 |
 
 # Indexing
-## iloc
 `iloc`在索引中的特定位置获取行（或列）
 ```Python
 # Selecting row 0
@@ -192,6 +190,7 @@ df.iloc[0, 1]
 
 # Preprocessing
 数据预处理
+## At least one NaN value
 ```Python
 # 具有至少一个NaN值的行
 df[pd.isnull(df).any(axis=1)].head()# any按照列遍历，返回的index是行的
@@ -204,7 +203,6 @@ df[pd.isnull(df).any(axis=1)].head()# any按照列遍历，返回的index是行�
 | 23    | 1      | Bidois, Miss. Rosalie        | female | 42  | 0     | 0     | PC 17757 | 227.525 | NaN   | C        | 1        |
 | 25    | 1      | Birnbaum, Mr. Jakob          | male   | 25  | 0     | 0     | 13905    | 26      | NaN   | C        | 0        |
 
-## isnull
 ```
 pandas.isnull(obj)
 Parameters:
@@ -213,7 +211,6 @@ return: bool
 	对于标量输入，返回标量布尔值。对于数组输入，返回一个布尔数组，指示每个布尔值是否缺少相应的元素。
 ```
 
-## any
 ```
 pandas.DataFrame.any(*, axis=0, bool_only=None, skipna=True, **kwargs)
 Parameters:
@@ -230,8 +227,7 @@ return: Series or DataFrame
 	
 ```
 
-
-## dropna
+## Drop rows
 ```Python
 # 删除具有Nan值的行
 df = df.dropna() # 删除具有NaN值的行
@@ -239,14 +235,13 @@ df = df.reset_index() # 重置行索引
 df.head()
 ```
 
-## drop
 ```Python
 # 删除多行
 df = df.drop(["name", "cabin", "ticket"], axis=1) # 删除标签所在列
 df.head()
 ```
 
-## map
+## Map feature values
 ```Python
 # 映射特征值
 df['sex'] = df['sex'].map( {'female': 0, 'male': 1} ).astype(int)
@@ -255,6 +250,7 @@ df.head()
 ```
 
 # Feature engineering
+## Create new features
 我们将使用特征工程增加一个称为`family_size`的列，首先定义一个`get_family_size`函数，返回父母和子女的人数之和。
 ```Python
 def get_family_size(sibsp, parch):
@@ -267,9 +263,46 @@ def get_family_size(sibsp, parch):
 df["family_size"] = df[["sibsp", "parch"]].apply(lambda x: get_family_size(x["sibsp"], x["parch"]), axis=1)# 增加一列
 df.head()
 ```
-## apply
+
 ```
 DataFrame.apply(func, axis=0, raw=False, result_type=None, args=(), **kwargs)
 Parameters:
-	
+	func: 应用于每行或列的函数
+	axis: 0-index，对行便利，对每一列应用函数; 1-column对列遍历，对每一行应用函数
+	raw: bool, False: 将每一行或每一列作为Series传递给func; True: 传递的函数将接收ndarray对象
+	result_type: {‘expand’, ‘reduce’, ‘broadcast’, None}仅在axis=1起作用
+	args=(): 除了array/series之外，要传递给func的位置参数。
+Returns: 
+	Series or DataFrame，沿着axis应用func的结果
 ```
+
+## Reorganize headers
+```Python
+# 重新组织标题
+df = df[['pclass', 'sex', 'age', 'sibsp', 'parch', 'family_size', 'fare', 'embarked', 'survived']]
+df.head()
+```
+
+# Save data
+```Python
+# 保存数据帧（dataframe）到 CSV
+df.to_csv("processed_titanic.csv", index=False)
+```
+
+```Python
+# 看你一下你保持的文件
+!ls -l
+
+"""
+total 96
+-rw-r--r-- 1 root root  6975 Dec  3 17:36 processed_titanic.csv
+drwxr-xr-x 1 root root  4096 Nov 21 16:30 sample_data
+-rw-r--r-- 1 root root 85153 Dec  3 17:36 titanic.csv
+"""
+```
+
+# Scaling
+当处理非常大的数据集时，我们的 Pandas 数据帧可能会变得非常大，并且对它们进行操作可能非常慢或不可能。这是可以分发工作负载或在更高效的硬件上运行的软件包可以派上用场的地方。
+-  [Dask](https://dask.org/)：并行计算，可在一台/多台机器上扩展Numpy，Pandas和scikit-learn等软件包。
+-  [cuDF](https://github.com/rapidsai/cudf)：在 GPU 上高效的数据帧加载和计算。
+当然，我们可以将它们组合在一起（[Dask-cuDF](https://github.com/rapidsai/cudf/tree/main/python/dask_cudf)）以在GPU上的数据帧分区上运行。
