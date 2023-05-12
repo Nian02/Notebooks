@@ -1,7 +1,7 @@
 {
   "useMarkdownLinks": true,
   "newLinkFormat": "relative",
-  "attachmentFolderPath": "Image",
+  "attachmentFolderPath": "Image/Java",
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "newFileLocation": "current"

@@ -90,7 +90,7 @@ plt.scatter(x=df["X"], y=df["y"])
 plt.show()
 ```
 
-![](../Image/Linear%20regression%20generated%20data.png)
+![](../Image/Machine%20Learning/Linear%20regression%20generated%20data.png)
 
 # Numpy
 现在我们已经准备好了数据，我们将首先使用 NumPy 实现线性回归。这将让我们真正了解底层操作。
@@ -310,7 +310,7 @@ plt.legend(loc="lower right")
 # Show plots
 plt.show()
 ```
-![](../Image/Linear%20regression%20train%20and%20test%20Numpy.png)
+![](../Image/Machine%20Learning/Linear%20regression%20train%20and%20test%20Numpy.png)
 
 ## Interpretability
 由于我们对输入和输出进行了标准化，因此我们的权重适合这些标准化值。因此，我们需要取消我们的权重标准化，以便将其与我们的真实权重（3.5）进行比较。
@@ -602,7 +602,7 @@ plt.legend(loc="lower right")
 # Show plots
 plt.show()
 ```
-![](../Image/Linear%20regression%20train%20and%20test%20Pytorch.png)
+![](../Image/Machine%20Learning/Linear%20regression%20train%20and%20test%20Pytorch.png)
 `.detach().numpy()`将`PyTorch张量pred_train`从计算图（[Computational Graph](Basic%20concept/Computational%20Graph.md)）中分离出来，并将其转换为一个`NumPy数组`
 1.  `detach()`函数：将一个张量从计算图中分离出来，使其不再参与后续计算，返回一个新的张量。这个函数通常用于在反向传播(backpropagation)过程中，需要保留某些中间变量的梯度信息，但又不希望这些变量对计算图造成影响。
 2.  `numpy()`函数：将一个PyTorch张量转换为NumPy数组。

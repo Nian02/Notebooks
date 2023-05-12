@@ -124,7 +124,7 @@ Creating a new branch is quick AND simple.
 $ git merge --no-ff -m "merge with no-ff" dev
 ```
 
-![](../Image/Git%20Fast%20Forward.png)
+![](../Image/Git/Git%20Fast%20Forward.png)
 
 ## 储藏（Stashing）
 在一个分支上操作之后，如果还没有将修改提交到分支上，此时进行切换分支，那么另一个分支上也能看到新的修改。这是因为所有分支都共用一个工作区的缘故。

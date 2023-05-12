@@ -85,7 +85,7 @@ plt.colorbar()
 plt.show()
 
 ```
-![](../../Image/Correlation%20matrix.png)
+![](../../Image/Machine%20Learning/Correlation%20matrix.png)
 
 ## Histograms
 我们还可以用`.hist()`来查看每个特征的值的直方图。
@@ -93,7 +93,7 @@ plt.show()
 # age的直方图
 df["age"].hist()
 ```
-![](../../Image/Pandas_Hist.png)
+![](../../Image/Machine%20Learning/Pandas_Hist.png)
 ```Python
 # 唯一值
 df["embarked"].unique()

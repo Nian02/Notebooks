@@ -1,0 +1,7 @@
+- ctrl + alt + L 自动的格式化代码
+- ctrl + alt +V 自动生成方法的左边
+- alt + insert 或 alt + Fn + insert 生成构造方法、Getter、Setter
+- Setting->PTG 右键ptg to JavaBean
+- ctrl + D 向下复制一行
+- ctrl + B 选中关键字跟进源码
+- ctrl + alt + ← 返回上一步 
