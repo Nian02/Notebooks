@@ -1,4 +1,6 @@
-作用：区分局部变量和成员变量
+-  作用：区分局部变量和成员变量
+-  使用 this 访问属性和方法时，如果在本类中没有找到，会从父类中查找
+
 ```java
 public class Student{
 	private int age;
@@ -19,5 +21,5 @@ public class StudentTest{
 }
 ```
 
-本质：代表方法调用者的地址值。
+本质：代表**方法调用者的地址值**。
 假如s是地址值001，那么this也是地址值001，也就是说`this.age`相当于`s.age`

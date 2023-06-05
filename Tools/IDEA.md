@@ -5,3 +5,9 @@
 - ctrl + D 向下复制一行
 - ctrl + B 选中关键字跟进源码
 - ctrl + alt + ← 返回上一步 
+- ctrl + F12 查找类中方法如StringBuilder中的toString()
+-  `ctrl + alt + T` 对一段代码创建循环
+-  `alt + enter` 快速插入没有的类的方法
+-  `ctrl + /` 快速单行注释
+-  `ctrl + shift + /` 快速多行注释 
+-  `alt + 鼠标` 竖着选取，集体编辑

@@ -18,14 +18,18 @@ public static void change(int number){...}
 boolean 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM （_Java Virtual Machine_）会在编译时期将 boolean 类型的数据转换为 int，使用 1 来表示 true，0 表示 false。JVM 支持 boolean 数组，但是是通过读写 byte 数组来实现的。
 
 ## 引用数据类型
+
 变量当中存储的是**地址值**。比如对象、数组。方法传递引用数据类型时，传递的是数据的地址值，形参的改变影响实际参数的值。
+
 >引用：使用了其他空间中的数据
+
 ```java
 int[] arr1 = {1,2,3,4,5};
 int[] arr2 = arr1;
 
 public static void change(int[] arr){...}
 ```
+
 ## 包装类型
 基本类型都有对应的包装类型，基本类型与其对应的包装类型之间的赋值使用自动装箱与拆箱完成。
 ```java

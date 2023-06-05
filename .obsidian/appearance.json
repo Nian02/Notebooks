@@ -1,5 +1,6 @@
 {
   "accentColor": "",
   "theme": "obsidian",
-  "textFontFamily": ""
+  "textFontFamily": "",
+  "baseFontSize": 16
 }
